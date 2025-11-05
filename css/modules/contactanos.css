@@ -1,0 +1,112 @@
+.contactanos {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    /* -- Title -- */
+    .contactanos__title {
+        text-align: center;
+        margin-bottom: 52px;
+    }
+
+    /* -- Subcontainer -- */
+    .contactanos__subcontainer {
+        display: flex;
+        width: 100%;
+        background-color: gray;
+    }
+
+    .contactanos__container-left {
+        width: 40%;
+        background-color: darkgray;
+        padding: 32px;
+    }
+
+    .contactanos__container-right {
+        width: 60%;
+        padding: 32px;
+    }
+
+
+
+    .loader-container {
+        display: none;
+        position: absolute;
+        inset: -8px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(black, .3);
+        border-radius: 8px;
+    }
+
+    .loader {
+        border: 8px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 8px solid #3498db;
+        width: 40px;
+        height: 40px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    .success-message {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        background-color: rgba(black, .1);
+        padding: 24px 6px;
+        border-radius: 8px;
+
+        p {
+            color: var(--color-primary);
+            font-weight: 700;
+            width: 100%;
+            text-align: center;
+            margin-top: 12px;
+        }
+    }
+
+    /* -- SVG Tick Animation -- */
+    @supports (animation: grow .5s cubic-bezier(.25, .25, .25, 1) forwards) {
+        .tick {
+        stroke-opacity: 0;
+        stroke-dasharray: 29px;
+        stroke-dashoffset: 29px;
+        animation: draw .5s cubic-bezier(.25, .25, .25, 1) forwards;
+        animation-delay: .6s
+    }
+
+    .circle {
+        fill-opacity: 0;
+        stroke: #219a00;
+        stroke-width: 16px;
+        transform-origin: center;
+        transform: scale(0);
+        animation: grow 1s cubic-bezier(.25, .25, .25, 1.25) forwards;   
+    }   
+    }
+
+    @keyframes grow {
+        60% {
+            transform: scale(.8);
+            stroke-width: 4px;
+            fill-opacity: 0;
+        }
+        100% {
+            transform: scale(.9);
+            stroke-width: 8px;
+            fill-opacity: 1;
+            fill: #219a00;
+        }
+    }
+
+    @keyframes draw {
+        0%, 100% { stroke-opacity: 1; }
+        100% { stroke-dashoffset: 0; }
+    }
+}

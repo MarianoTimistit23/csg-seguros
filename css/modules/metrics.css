@@ -1,0 +1,10 @@
+.metrics {
+    background-color: gray;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    
+    .metrics__container {
+        display: flex;
+        justify-content: space-around;
+    }
+}

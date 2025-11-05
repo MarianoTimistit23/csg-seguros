@@ -1,0 +1,15 @@
+@import 'css/reset.css';
+@import 'css/utility-classes.css';
+@import 'css/global-styles.css';
+/* Components */
+@import 'css/components/header.css';
+@import 'css/components/footer.css';
+/* Modules */
+@import 'css/modules/hero.css';
+@import 'css/modules/metrics.css';
+@import 'css/modules/quienes-somos.css';
+@import 'css/modules/productos.css';
+@import 'css/modules/testimonials.css';
+@import 'css/modules/faqs.css';
+@import 'css/modules/company-logos.css';
+@import 'css/modules/contactanos.css';

@@ -1,0 +1,69 @@
+.quienes-somos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+    .quienes-somos__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 90px;
+    }
+
+    /* Left */
+    .quienes-somos__copy {
+        margin-top: 24px;
+    }
+
+    /* Right */
+    .quienes-somos__container-right {
+        display: flex;
+        gap: 20px;
+    }
+
+    .quienes-somos__image-container {
+        position: relative;
+        width: 380px;
+        height: 400px;
+        overflow: hidden;
+
+        &:hover {
+            
+            img {
+                filter: blur(2px) grayscale(70%);
+                transition: .2s linear;
+            }
+
+            & > div {
+                opacity: 1;
+                transition: .2s linear;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .2s linear;
+        }
+
+        & > div {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            opacity: 0;
+            padding: 32px;
+            transition: .2s linear;
+
+            p {
+                color: var(--color-white);
+            }
+
+            a {
+                color: var(--color-white);
+            }
+        }
+    }
+}

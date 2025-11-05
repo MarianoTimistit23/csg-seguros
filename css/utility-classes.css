@@ -1,0 +1,42 @@
+/* -- Variables -- */
+:root {
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --color-primary: #000000;
+    --color-secondary: #0be3ff;
+    --color-light-gray: #f3f3f3;
+    --color-text-black: #333333;
+}
+
+/* -- Utility Classes -- */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* -- Utility Classes -- */
+.btn {
+    appearance: none;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    padding: 16px 32px;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &.btn--primary {
+        color: var(--color-white);
+        background-color: var(--color-secondary);
+        border: 1px solid var(--color-secondary);
+
+        &:hover {
+            background-color: var(--color-primary);
+            border: 1px solid var(--color-primary);
+            transition: .2s linear;
+        }
+    }
+}

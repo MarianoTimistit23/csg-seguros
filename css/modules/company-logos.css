@@ -1,0 +1,17 @@
+.company-logos {
+    background-color: gray;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .swiper-wrapper {
+        align-items: center;
+    }
+
+    .company-logos__logo-container {
+        max-width: 180px;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}

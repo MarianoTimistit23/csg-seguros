@@ -1,0 +1,21 @@
+.testimonials {
+    background-color: gray;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    /* -- Title -- */
+    .testimonials__title {
+        text-align: center;
+        margin-bottom: 52px;
+    }
+
+    /* -- Slider -- */
+    .testimonials__testimonial-subcontainer {
+        color: var(--color-white);
+        background-color: black;
+        border-radius: 6px;
+        max-width: 600px;
+        padding: 32px;
+        margin: 0 auto;
+    }
+}

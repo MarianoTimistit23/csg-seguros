@@ -1,0 +1,124 @@
+.faqs {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    /* -- Title -- */
+    .faqs__title {
+        text-align: center;
+        margin-bottom: 42px;
+    }
+
+    /* -- FAQs -- */
+    .faqs-faq {
+        width: 100%;
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        details {
+            box-sizing: border-box;
+    
+            &[open] {
+    
+                summary {
+                    color: var(--text-black);
+                    background-color: darkgray;
+                    transition: .2s linear;
+
+                    &::after {
+                        transform: translate(-50%, 1000%) rotate(90deg);
+                        opacity: 0;
+                        transition: .2s linear;
+                    }
+                }
+            }
+        }
+
+        summary {
+            box-sizing: border-box;
+            position: relative;
+            background-color: var(--color-light-gray);
+            border-radius: 6px;
+            outline: none;
+            width: 100%;
+            padding: 26px 102px;
+            transition: .2s linear;
+            cursor: pointer;
+            transition: .2s linear;
+    
+            span {
+                display: block;
+                max-width: 88%;
+            }
+    
+            &::marker {
+                content: ''; /* Hide default marker */
+            }
+    
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 102px;
+                display: block;
+                width: 18px;
+                height: 1px;
+                opacity: 1;
+                transition: .2s linear;
+            }
+    
+            &::before {
+                transform: translate(-50%, -50%) rotate(0);
+            }
+    
+            &::after {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+    
+            &:focus,
+            &:hover {
+                color: yellow;
+                border-color: black;
+                transition: .2s linear;
+            }
+
+            /* Tablet */
+            @media only screen and (max-width: 992px) {
+                padding: 16px 26px;
+    
+                &::before,
+                &::after {
+                    right: 26px;
+                }
+            }
+        }
+
+        .faqs-faq-answer {
+            padding: 12px 42px 24px;
+            margin: 0 !important;
+    
+            /* Mobile */
+            @media only screen and (max-width: 767px) {
+                padding: 18px;
+            }
+    
+            p {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+    
+            a {
+                color: yellow;
+                transition: .2s linear;
+    
+                &:hover {
+                    color: black;
+                    transition: .2s linear;
+                }
+            }
+        }
+    }
+}
