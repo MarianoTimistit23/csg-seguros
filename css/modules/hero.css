@@ -12,13 +12,18 @@
         max-width: 520px;
     }
 
+    .hero__title {
+        color: var(--color-blue-darker);
+    }
+
     .hero__subtitle {
+        font-size: 20px;
         font-weight: 700;
         margin-top: 16px;
     }
 
     .hero__copy {
-        margin-top: 32px;
+        margin-top: 42px;
     }
 
     .hero__button {

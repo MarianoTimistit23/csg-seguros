@@ -3,9 +3,11 @@
     --color-white: #FFFFFF;
     --color-black: #000000;
 
-    --color-primary: #000000;
-    --color-secondary: #0be3ff;
-    --color-light-gray: #f3f3f3;
+    --color-blue-darker: #0d3f69;
+    --color-blue-dark: #1363a2;
+    --color-blue: #1475b2;
+    --color-dark-gray: #606062;
+    --color-light-gray: #e4e6f3;
     --color-text-black: #333333;
 }
 
@@ -30,12 +32,25 @@
 
     &.btn--primary {
         color: var(--color-white);
-        background-color: var(--color-secondary);
-        border: 1px solid var(--color-secondary);
+        background-color: var(--color-blue);
+        border: 1px solid var(--color-blue);
 
         &:hover {
-            background-color: var(--color-primary);
-            border: 1px solid var(--color-primary);
+            background-color: var(--color-blue-darker);
+            border: 1px solid var(--color-blue-darker);
+            transition: .2s linear;
+        }
+    }
+
+    &.btn--light-gray {
+        color: var(--color-text-black);
+        background-color: var(--color-light-gray);
+        border: 1px solid var(--color-light-gray);
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: #d9dbe7;
+            border: 1px solid #d9dbe7;
             transition: .2s linear;
         }
     }

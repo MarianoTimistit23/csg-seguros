@@ -19,12 +19,13 @@
 
         details {
             box-sizing: border-box;
+            margin-bottom: 12px;
     
             &[open] {
     
                 summary {
-                    color: var(--text-black);
-                    background-color: darkgray;
+                    color: var(--color-white);
+                    background-color: var(--color-blue-dark);
                     transition: .2s linear;
 
                     &::after {
@@ -80,7 +81,6 @@
     
             &:focus,
             &:hover {
-                color: yellow;
                 border-color: black;
                 transition: .2s linear;
             }
@@ -119,6 +119,21 @@
                     transition: .2s linear;
                 }
             }
+        }
+    }
+
+    .faqs__button-container {
+        margin-top: 42px;
+
+        p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        a {
+            display: block;
+            width: max-content;
+            margin: 24px auto 0;
         }
     }
 }

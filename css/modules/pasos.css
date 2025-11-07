@@ -1,0 +1,58 @@
+.pasos {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .pasos__steps-container {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .pasos__step-container {
+        position: relative;
+        width: 100%;
+        max-width: 200px;
+
+        &::after {
+            content: url('../../imagenes/icons/arrow-right--black-big.svg');
+            position: absolute;
+            top: 40%;
+            right: -30px;
+            transform: translate(100%, -50%);
+        }
+
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .pasos__step-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-light-gray);
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+
+        img {
+            max-width: 50%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .pasos__step-title {
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .pasos__step-copy {
+        text-align: center;
+        margin-top: 6px;
+    }
+}

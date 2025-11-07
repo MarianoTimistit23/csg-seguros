@@ -1,10 +1,27 @@
 .metrics {
-    background-color: gray;
+    background-color: var(--color-light-gray);
     padding-top: 42px;
     padding-bottom: 42px;
     
     .metrics__container {
         display: flex;
         justify-content: space-around;
+    }
+
+    .metrics__metric-container {
+        background-color: var(--color-blue-darker);
+        width: 100%;
+        max-width: 250px;
+        padding: 42px;
+    }
+
+    .metrics__metric-number-container {
+        font-size: 52px;
+        color: var(--color-white);
+    }
+
+    .metrics__metric-text {
+        font-size: 24px;
+        color: var(--color-white);
     }
 }

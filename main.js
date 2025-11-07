@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
      */
     window.onscroll = () => {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-            document.querySelector(".js-header")?.classList.add('active');
+            document.querySelector(".js-header")?.classList.add('scrolled');
         } else {
-            document.querySelector(".js-header")?.classList.remove('active');
+            document.querySelector(".js-header")?.classList.remove('scrolled');
         }
     };
     
@@ -48,6 +48,53 @@ document.addEventListener('DOMContentLoaded', function() {
     faders.forEach(fader => {
         appearOnScroll.observe(fader);
     });
+
+    /**
+     * Metrics counters (animate from 0 to target on scroll)
+     */
+    const counterEls = document.querySelectorAll('.js-counter');
+
+    const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+    function animateCounter(el, target, duration = 1500) {
+        const start = 0;
+        const startTime = performance.now();
+
+        function update(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const eased = easeOutCubic(progress);
+            const value = Math.floor(start + (target - start) * eased);
+            el.textContent = value.toLocaleString('es-AR');
+
+            if (progress < 1) {
+                requestAnimationFrame(update);
+            } else {
+                el.textContent = target.toLocaleString('es-AR');
+            }
+        }
+
+        requestAnimationFrame(update);
+    }
+
+    const countersObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            if (el.dataset.animated === 'true') {
+                obs.unobserve(el);
+                return;
+            }
+            const target = parseInt(el.getAttribute('data-target'), 10);
+            if (!Number.isNaN(target)) {
+                animateCounter(el, target);
+                el.dataset.animated = 'true';
+            }
+            obs.unobserve(el);
+        });
+    }, { threshold: 0.4 });
+
+    counterEls.forEach(el => countersObserver.observe(el));
 
     /**
      * Hamburger Menu Toggle

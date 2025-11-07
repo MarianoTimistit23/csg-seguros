@@ -27,7 +27,7 @@
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "LVP Technologies",
+              "name": "CSG - Seguros",
               "url": "https://lvptechnologies.com",
               "logo": "https://lvptechnologies.com/images/logos/lvp-favicon.png"
             }
@@ -42,17 +42,17 @@
                 
                 <!-- Logo -->
                 <div class="header__logo">
-                    <p>LOGO</p>
+                    <p style="color: white;">LOGO</p>
                 </div>
 
                 <!-- Nav -->
                 <nav class="header__nav">
                     <ul>
-                        <li>Nosotros</li>
-                        <li>Productos</li>
-                        <li>Preguntas Frecuentes</li>
-                        <li>Contacto</li>
-                        <li>Cotizador Online</li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=" target="_blank" class="btn btn--light-gray">Cotizador Online</a></li>
                     </ul>
                 </nav>
 
@@ -117,24 +117,29 @@
 
                     <!-- Metrica 1 -->
                     <div class="metrics__metric-container">
-                        <p>+<span>10</span></p>
-                        <p>años en seguros</p>
+                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="10">0</span></p>
+                        <p class="metrics__metric-text">años en seguros</p>
                     </div>
                     <!-- Metrica 2 -->
                     <div class="metrics__metric-container">
-                        <p>+<span>2000</span></p>
-                        <p>siniestros gestionados</p>
+                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="2000">0</span></p>
+                        <p class="metrics__metric-text">siniestros gestionados</p>
                     </div>
                     <!-- Metrica 3 -->
                     <div class="metrics__metric-container">
-                        <p>+<span>350</span></p>
-                        <p>polizas administradas</p>
+                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="350">0</span></p>
+                        <p class="metrics__metric-text">polizas administradas</p>
+                    </div>
+                    <!-- Metrica 4 -->
+                    <div class="metrics__metric-container">
+                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="25">0</span></p>
+                        <p class="metrics__metric-text">Lorem ipsum dolor.</p>
                     </div>
                 </div>
             </section>
 
             <!-- Quienes somos -->
-            <section class="quienes-somos">
+            <section class="quienes-somos" id="nosotros">
                 <div class="quienes-somos__container container">
 
                     <!-- Left -->
@@ -164,7 +169,18 @@
                             </div>
                         </div>
                         <div class="quienes-somos__image-container">
+                            <!-- Image -->
                             <img src="imagenes/cecilia.jpg" alt="Cecilia">
+                            <!-- Bio -->
+                            <div>
+                                <p>Cecilia es una productora asesor de seguros independiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                <a href="#" class="quienes-somos__linkedin-link">
+                                    LinkedIn
+                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 6.5L15 6.5M15 6.5L10.1 12M15 6.5L10.1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -175,13 +191,75 @@
             <section class="pasos">
                 <div class="pasos__container container">
 
-                    PASOS
+                    <div class="pasos__steps-container">
+
+                        <!-- Step 1 -->
+                        <div class="pasos__step-container">
+                            <!-- Image -->
+                            <div class="pasos__step-image-container">
+                                <img src="imagenes/pasos/diagnosis.png" alt="Paso 1">
+                            </div>
+                            <!-- Title -->
+                            <h3 class="pasos__step-title">DIAGNÓSTICO</h3>
+                            <!-- Copy -->
+                            <p class="pasos__step-copy">Pólizas y riesgos actuales</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="pasos__step-container">
+                            <!-- Image -->
+                            <div class="pasos__step-image-container">
+                                <img src="imagenes/pasos/risk-map-2.png" alt="Paso 2">
+                            </div>
+                            <!-- Title -->
+                            <h3 class="pasos__step-title">MAPA DE RIESGOS</h3>
+                            <!-- Copy -->
+                            <p class="pasos__step-copy">Impacto y probabilidad</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="pasos__step-container">
+                            <!-- Image -->
+                            <div class="pasos__step-image-container">
+                                <img src="imagenes/pasos/option.png" alt="Paso 3">
+                            </div>
+                            <!-- Title -->
+                            <h3 class="pasos__step-title">OPCIONES CLARAS</h3>
+                            <!-- Copy -->
+                            <p class="pasos__step-copy">Mejor cobertura multimarca</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="pasos__step-container">
+                            <!-- Image -->
+                            <div class="pasos__step-image-container">
+                                <img src="imagenes/pasos/implementation.png" alt="Paso 3">
+                            </div>
+                            <!-- Title -->
+                            <h3 class="pasos__step-title">IMPLEMENTACIÓN</h3>
+                            <!-- Copy -->
+                            <p class="pasos__step-copy">Emisión, endosos y documentación</p>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="pasos__step-container">
+                            <!-- Image -->
+                            <div class="pasos__step-image-container">
+                                <img src="imagenes/pasos/team.png" alt="Paso 3">
+                            </div>
+                            <!-- Title -->
+                            <h3 class="pasos__step-title">ACOMPAÑAMENTO</h3>
+                            <!-- Copy -->
+                            <p class="pasos__step-copy">Revisión semestral de póliza</p>
+                        </div>
+
+                    </div>
 
                 </div>
             </section>
 
             <!-- Productos -->
-            <section class="productos">
+            <section class="productos" id="productos">
                 <div class="productos__container container">
 
                     <!-- Title -->
@@ -197,20 +275,20 @@
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Seguro de Auto</h3>
+                                <h3 class="productos__grid-item-title">Auto</h3>
                                 <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
-                                <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
+                                <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/automotor" target="_blank" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
                         <!-- Hogar -->
                         <div class="productos__grid-item">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
-                                <img src="imagenes/productos/seguro-auto.jpg" alt="Seguro de Auto">
+                                <img src="imagenes/productos/seguro-hogar.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Seguro de Auto</h3>
+                                <h3 class="productos__grid-item-title">Hogar</h3>
                                 <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
                                 <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
@@ -223,20 +301,20 @@
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Seguro de Auto</h3>
+                                <h3 class="productos__grid-item-title">Vida</h3>
                                 <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
-                                <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
+                                <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/hogar" target="_blank" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
                         <!-- Salud -->
                         <div class="productos__grid-item">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
-                                <img src="imagenes/productos/seguro-auto.jpg" alt="Seguro de Auto">
+                                <img src="imagenes/productos/seguro-hogar.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Seguro de Auto</h3>
+                                <h3 class="productos__grid-item-title">Salud</h3>
                                 <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
                                 <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
@@ -245,11 +323,11 @@
                         <div class="productos__grid-item">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
-                                <img src="imagenes/productos/seguro-auto.jpg" alt="Seguro de Auto">
+                                <img src="imagenes/productos/" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Seguro de Auto</h3>
+                                <h3 class="productos__grid-item-title">Accidentes Personales</h3>
                                 <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
                                 <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
@@ -258,22 +336,25 @@
                         <div class="productos__grid-item">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
-                                <img src="imagenes/productos/seguro-auto.jpg" alt="Seguro de Auto">
+                                <img src="imagenes/productos/seguro-negocio.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Seguro de Auto</h3>
+                                <h3 class="productos__grid-item-title">Negocios</h3>
                                 <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
                                 <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Button -->
+                    <a href="https://calendar.app.google/fL331umiB22Dc57A7" target="_blank" class="productos__button btn btn--primary">Agendá gratis tu auditoría de 15’</a>
+
                 </div>
             </section>
 
             <!-- Testimonios -->
-            <section class="testimonials">
+            <section class="testimonials" id="testimonials">
                 <div class="testimonials__container container">
 
                     <!-- Title -->
@@ -285,19 +366,34 @@
                             <!-- Testimonial 1 -->
                             <div class="testimonials__testimonial swiper-slide">
                                 <div class="testimonials__testimonial-subcontainer">
-                                    <p>TESTIMONIO 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                    <p class="testimonials__testimonial-quote">"TESTIMONIO 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
+                                    <div class="testimonials__testimonial-footer">
+                                        <div class="testimonials__testimonial-author-image-container">
+                                        </div>
+                                        <p class="testimonials__testimonial-author">Juan Perez</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Testimonial 2 -->
                             <div class="testimonials__testimonial swiper-slide">
                                 <div class="testimonials__testimonial-subcontainer">
-                                    <p>TESTIMONIO 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                    <p class="testimonials__testimonial-quote">"TESTIMONIO 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
+                                    <div class="testimonials__testimonial-footer">
+                                        <div class="testimonials__testimonial-author-image-container">
+                                        </div>
+                                        <p class="testimonials__testimonial-author">Juan Perez</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Testimonial 3 -->
                             <div class="testimonials__testimonial swiper-slide">
                                 <div class="testimonials__testimonial-subcontainer">
-                                    <p>TESTIMONIO 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                    <p class="testimonials__testimonial-quote">"TESTIMONIO 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
+                                    <div class="testimonials__testimonial-footer">
+                                        <div class="testimonials__testimonial-author-image-container">
+                                        </div>
+                                        <p class="testimonials__testimonial-author">Juan Perez</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -308,7 +404,7 @@
             </section>
 
             <!-- Preguntas Frecuentes -->
-            <section class="faqs">
+            <section class="faqs" id="preguntas-frecuentes">
                 <div class="faqs__container container">
                     
                     <!-- Title -->
@@ -395,6 +491,12 @@
                         </div>
                     </div>
 
+                    <!-- Button -->
+                    <div class="faqs__button-container">
+                        <p><strong>¿Todavía tenes preguntas?</strong> <br> Agenda una consulta gratuita con nosotros.</p>
+                        <a href="#" class="faqs__button btn btn--primary">Agendá gratis tu auditoría de 15’</a>
+                    </div>
+
                 </div>
             </section>
 
@@ -439,7 +541,7 @@
             </section>
 
             <!-- Contactanos -->
-            <section class="contactanos">
+            <section class="contactanos" id="contacto">
                 <div class="contactanos__container container">
 
                     <!-- Title -->
@@ -451,11 +553,22 @@
                         <!-- Left -->
                         <div class="contactanos__container-left">
                             <!-- Map -->
-                            <div>MAPA</div>
+                            <div class="contactanos__map-container">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.1303840151654!2d-64.19667942363212!3d-31.410533595969845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432987e161dcd11%3A0x2fe7c79d3f7b1afb!2sJusto%20Jos%C3%A9%20de%20Urquiza%20193%2C%20X5000KPC%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1762434162935!5m2!1ses-419!2sar" width="470" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                             <!-- Datos -->
-                            <p>Av. San Martin 1234, Córdoba, Argentina</p>
-                            <a href="mailto:contacto@csgseguros.com.ar">contacto@csgseguros.com.ar</a>
-                            <a href="tel:+5493513333333">+54 9 351 333 3333</a>
+                            <p class="contactanos__address">
+                                <img src="imagenes/icons/address-icon.svg" alt="Address Icon">
+                                Av. San Martin 1234, Córdoba, Argentina
+                            </p>
+                            <a href="mailto:contacto@csgseguros.com.ar" class="contactanos__email">
+                                <img src="imagenes/icons/email-icon.svg" alt="Email Icon">
+                                contacto@csgseguros.com.ar
+                            </a>
+                            <a href="tel:+5493513333333" class="contactanos__phone">
+                                <img src="imagenes/icons/whatsapp-icon.svg" alt="Phone Icon">
+                                +54 9 351 333 3333
+                            </a>
                         </div>
                     
                         <!-- Right -->
@@ -502,9 +615,26 @@
         <!-- Footer -->
         <footer class="footer">
             <div class="footer__container container">
-                <p>TEST</p>
+                
+                <!-- Left -->
+                <div class="footer__container-left">
+                    <div>LOGO</div>                    
+                    <div>INFO CONTACTO</div>
+                    <div>REDES SOCIALES</div>
+                </div>
+
+                <!-- Right -->
+                <div class="footer__container-right">
+                    <p>MATRICULAS + LOGO SSN</p>
+                </div>
+
             </div>
         </footer>
+
+        <!-- WhatsApp Fixed Button -->
+        <a href="https://wa.me/5493513333333" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+            <img src="imagenes/icons/whatsapp-icon-color.png" alt="WhatsApp">
+        </a>
 
         <!-- Main.js -->
         <script src="main.js"></script>
