@@ -1,11 +1,113 @@
 .footer {
     color: var(--color-white);
     background-color: var(--color-blue-darker);
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
 
+    /* --- Links --- */
+    a {
+        opacity: 1;
+        transition: .2s linear;
+
+        &:hover {
+            opacity: .7;
+            transition: .2s linear;
+        }
+    }
+
+    /* --- Container --- */
     .footer__container {
         display: flex;
         justify-content: space-between;
+    }
+
+    /* --- Left --- */
+    .footer__container-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer__contact-info {
+        margin-top: 24px;
+    }
+
+    .footer__address,
+    .footer__email,
+    .footer__phone {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: var(--color-white);
+        margin-bottom: 6px;
+
+        img {
+            max-width: 24px;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    .footer__redes-sociales {
+        display: flex;
+        gap: 24px;
+
+        a {
+
+            img {
+                opacity: 1;
+                transition: .2s linear;
+            }
+
+            &:hover {
+                img {
+                    opacity: .7;
+                    transition: .2s linear;
+                }
+            }
+        }
+    }
+
+    /* --- Right --- */
+    /* - Top - */
+    .footer__container-right-top {
+        margin-bottom: 40px;
+
+        .footer__ssn-logo {
+            display: block;
+            max-width: 380px;
+            margin-left: auto;
+        }
+
+        p {
+            color: var(--color-white);
+            text-align: right;
+            margin-top: 6px;
+        }
+    }
+
+
+    /* - Bottom - */
+    .footer__container-right-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        border-top: 1px solid var(--color-white);
+        padding-top: 20px;
+
+        p {
+            font-size: 14px;
+            color: var(--color-white);
+            margin-bottom: 6px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .footer__qr-ssn {
+        max-width: 100px;
     }
 }

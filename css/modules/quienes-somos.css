@@ -13,6 +13,13 @@
     /* Left */
     .quienes-somos__copy {
         margin-top: 24px;
+        p {
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     /* Right */
@@ -57,12 +64,14 @@
             padding: 32px;
             transition: .2s linear;
 
-            p {
+            h3,
+            p,
+            a {
                 color: var(--color-white);
             }
 
-            a {
-                color: var(--color-white);
+            h3 {
+                margin-bottom: 12px;
             }
         }
     }

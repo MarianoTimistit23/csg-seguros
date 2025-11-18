@@ -5,18 +5,21 @@
     
     .metrics__container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 100px;
     }
 
     .metrics__metric-container {
         background-color: var(--color-blue-darker);
         width: 100%;
         max-width: 250px;
+        border-radius: 6px;
         padding: 42px;
     }
 
     .metrics__metric-number-container {
         font-size: 52px;
+        line-height: 62px;
         color: var(--color-white);
     }
 

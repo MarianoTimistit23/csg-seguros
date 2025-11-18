@@ -28,6 +28,39 @@
             display: flex;
             align-items: center;
             gap: 20px;
+
+            a {
+                position: relative;
+
+                &::after {
+                    bottom: -4px;
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    left: 0;
+                    position: absolute;
+                    background: var(--color-white);
+                    opacity: 0.6;
+                    transition: width 0.4s ease, opacity 0.4s ease 0s;
+                    width: 0;
+                }
+
+                &:hover {
+
+                    &::after {
+                        width: 100%;
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .btn {
+                padding: 10px 16px;
+
+                &::after {
+                    display: none;
+                }
+            }
         }
     }
 

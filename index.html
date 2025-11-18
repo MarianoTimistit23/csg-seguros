@@ -41,9 +41,9 @@
             <div class="header__container container">
                 
                 <!-- Logo -->
-                <div class="header__logo">
+                <a href="#" class="header__logo">
                     <p style="color: white;">LOGO</p>
-                </div>
+                </a>
 
                 <!-- Nav -->
                 <nav class="header__nav">
@@ -51,8 +51,7 @@
                         <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="#productos">Productos</a></li>
                         <li><a href="#preguntas-frecuentes">Preguntas Frecuentes</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                        <li><a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=" target="_blank" class="btn btn--light-gray">Cotizador Online</a></li>
+                        <li><a href="#contacto" class="btn btn--light-gray">Contacto</a></li>
                     </ul>
                 </nav>
 
@@ -92,20 +91,29 @@
                 <div class="hero__container container">
 
                     <!-- Left -->
-                    <div class="hero__container-left">
+                    <div class="hero__container-left js-animation-fade-in-up-container">
                         <!-- Title -->
-                        <h1 class="hero__title">Tu tranquilidad, asegurada.</h1>
+                        <h1 class="hero__title js-animation-fade-in-up-children">Tu tranquilidad, asegurada.</h1>
                         <!-- Subtitle -->
-                        <p class="hero__subtitle">Seguros a medida en Córdoba y para todo el país.</p>
+                        <p class="hero__subtitle js-animation-fade-in-up-children">Nuestra misión es simple: que vivas tranquilo.</p>
                         <!-- Copy -->
-                        <p class="hero__copy">Detectamos brechas, comparamos aseguradoras y te acompañamos en siniestros. En 15 minutos te mostramos si estás pagando de más o quedándote corto.</p>
+                        <div class="hero__copy js-animation-fade-in-up-children">
+                            <p>Usamos Nuestros 18 años de experiencia, para garantizar que tu póliza funcione cuando más la necesites. ¿Cómo? Realizando una auditoría de riesgos, evaluando necesidades y coberturas.</p>
+                            <p>Analizamos tu situación, identificamos los riesgos reales y nos aseguramos de que tu patrimonio esté 100% protegido.</p>
+                            <p>Trabajamos para que duermas tranquilo, sabiendo que tu patrimonio está seguro.</p>
+                            <p>Porque en CSG Seguros, "El beneficio es para el cliente".</p>
+                        </div>
                         <!-- Button -->
-                        <a href="https://calendar.app.google/fL331umiB22Dc57A7" target="_blank" class="hero__button btn btn--primary">Agendá gratis tu auditoríade 15’</a>
+                        <div class="hero__buttons-container js-animation-fade-in-up-children">
+                            <a href="https://calendar.app.google/fL331umiB22Dc57A7" target="_blank" class="hero__button btn btn--primary">Agendá tu Asesoría GRATUITA</a>
+                            <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=" target="_blank" class="btn btn--light-gray">Cotiza Online</a>
+                        </div>
+
                     </div>
 
                     <!-- Right -->
-                    <div class="hero__container-right">
-                        
+                    <div class="hero__container-right js-animation-fade-in">
+                        <img src="imagenes/hero-placeholder.jpg" alt="Hero Image">
                     </div>
 
                 </div>
@@ -113,28 +121,24 @@
 
             <!-- Metrics-->
             <section class="metrics">
-                <div class="metrics__container container">
+                <div class="metrics__container container js-animation-fade-in-up-container">
 
                     <!-- Metrica 1 -->
-                    <div class="metrics__metric-container">
-                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="10">0</span></p>
+                    <div class="metrics__metric-container js-animation-fade-in-up-children">
+                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="15">0</span></p>
                         <p class="metrics__metric-text">años en seguros</p>
                     </div>
                     <!-- Metrica 2 -->
-                    <div class="metrics__metric-container">
-                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="2000">0</span></p>
-                        <p class="metrics__metric-text">siniestros gestionados</p>
+                    <div class="metrics__metric-container js-animation-fade-in-up-children">
+                        <p class="metrics__metric-number-container"><span class="js-counter" data-target="100">0</span>%</p>
+                        <p class="metrics__metric-text">clientes satisfechos</p>
                     </div>
                     <!-- Metrica 3 -->
-                    <div class="metrics__metric-container">
-                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="350">0</span></p>
-                        <p class="metrics__metric-text">polizas administradas</p>
+                    <div class="metrics__metric-container js-animation-fade-in-up-children">
+                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="10">0</span></p>
+                        <p class="metrics__metric-text">compañías aseguradoras </p>
                     </div>
-                    <!-- Metrica 4 -->
-                    <div class="metrics__metric-container">
-                        <p class="metrics__metric-number-container">+<span class="js-counter" data-target="25">0</span></p>
-                        <p class="metrics__metric-text">Lorem ipsum dolor.</p>
-                    </div>
+
                 </div>
             </section>
 
@@ -143,22 +147,28 @@
                 <div class="quienes-somos__container container">
 
                     <!-- Left -->
-                    <div class="quienes-somos__container-left">
+                    <div class="quienes-somos__container-left js-animation-fade-in-up-container">
                         <!-- Title -->
-                        <h2 class="quienes-somos__title">Somos tu mejor aliado</h2>
+                        <h2 class="quienes-somos__title js-animation-fade-in-up-children">Somos tu mejor aliado</h2>
                         <!-- Copy -->
-                        <p class="quienes-somos__copy">Somos productores asesores de seguros independientes. Diseñamos planes a medida para reducir la intranquilidad y la desprotección de personas y PyMEs. Trabajamos con múltiples compañías para equilibrar cobertura y costo en función de tus riesgos reales.</p>
+                        <div class="quienes-somos__copy js-animation-fade-in-up-children">
+                            <p>Nacimos para cambiar la forma en que se viven los seguros en Argentina. No estamos aquí para vender pólizas genéricas, sino para construir relaciones a largo plazo basadas en la confianza, la cercanía y un compromiso real.</p>
+                            <p>Entendemos que detrás de cada consulta hay una historia, una familia y una preocupación genuina: proteger lo que más te importa.</p>
+                        </div>
 
                     </div>
 
                     <!-- Right -->
-                    <div class="quienes-somos__container-right">
-                        <div class="quienes-somos__image-container">
+                    <div class="quienes-somos__container-right js-animation-fade-in-up-container">
+                        <div class="quienes-somos__image-container js-animation-fade-in-up-children">
                             <!-- Image -->
                             <img src="imagenes/santiago.jpg" alt="Santiago">
                             <!-- Bio -->
                             <div>
-                                <p>Santiago es un productor asesor de seguros independiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                <div>
+                                    <h3>Santiago Hunicken</h3>
+                                    <p>Santiago es un productor asesor de seguros independiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                </div>
                                 <a href="#" class="quienes-somos__linkedin-link">
                                     LinkedIn
                                     <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -168,12 +178,15 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="quienes-somos__image-container">
+                        <div class="quienes-somos__image-container js-animation-fade-in-up-children">
                             <!-- Image -->
                             <img src="imagenes/cecilia.jpg" alt="Cecilia">
                             <!-- Bio -->
                             <div>
-                                <p>Cecilia es una productora asesor de seguros independiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                <div>
+                                    <h3>Cecilia</h3>
+                                    <p>Cecilia es una productora asesor de seguros independiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                                </div>
                                 <a href="#" class="quienes-somos__linkedin-link">
                                     LinkedIn
                                     <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,70 +200,192 @@
                 </div>
             </section>
 
-            <!-- Pasos -->
+            <!-- Quienes somos (continuacion) -->
+            <section class="quienes-somos-continuacion">
+                <div class="quienes-somos-continuacion__container container">
+
+                    <!-- Top -->
+                    <div class="quienes-somos-continuacion__top-container">
+                        <!-- Enfoque hibrido (left) -->
+                        <div class="quienes-somos-continuacion__top-container-left js-animation-fade-in-up-container">
+                            <h2 class="js-animation-fade-in-up-children">Nuestra Diferencia: El Enfoque Híbrido</h2>
+                            <p class="js-animation-fade-in-up-children">En CSG combinamos lo mejor de dos mundos: la solidez técnica y la sensibilidad humana.</p>
+                            <p class="js-animation-fade-in-up-children">Gracias a la formación y especialización en asesoría financiera de nuestro fundador, Santiago Hunicken, ofrecemos una mirada experta que va más allá del seguro tradicional. Analizamos el panorama completo de tus riesgos y tu situación financiera.</p>
+                            <p class="js-animation-fade-in-up-children">Pero la técnica no sirve de nada sin empatía. Por eso, nuestro pilar fundamental es la atención personalizada. Simplificamos lo complejo para que entiendas qué estás contratando y por qué.</p>
+                        </div>
+                        
+                        <!-- ¿Cómo lo hacemos? (right) -->
+                        <div class="quienes-somos-continuacion__top-container-right js-animation-fade-in-up-container">
+                            <h2 class="js-animation-fade-in-up-children">¿Cómo lo hacemos?</h2>
+                            <div class="js-animation-fade-in-up-children">
+                                <span>1.</span> 
+                                <p><strong>Asesoría Estratégica y Experta:</strong> No te ofrecemos un plan genérico. Analizamos tu realidad para ofrecerte soluciones inteligentes que realmente se adapten a tu vida y protejan tu patrimonio.</p>
+                            </div>
+                            <div class="js-animation-fade-in-up-children">
+                                <span>2.</span> 
+                                <p><strong>Atención Hiper-personalizada:</strong> Cada cliente es único. Te escuchamos, entendemos tu historia y ajustamos las recomendaciones a tus necesidades específicas.</p>
+                            </div>
+                            <div class="js-animation-fade-in-up-children">
+                                <span>3.</span> 
+                                <p><strong>Post-venta Proactiva (Nuestro gran distintivo):</strong> Nuestro trabajo no termina cuando firmás la póliza. Mantenemos un vínculo activo: te avisamos de vencimientos, revisamos tus planes periódicamente y buscamos activamente formas de mejorar tu cobertura, incluso si eso significa sugerir un plan más económico.</p></div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom -->
+                    <div class="quienes-somos-continuacion__bottom-container js-animation-fade-in-up-container">
+                        <p class="js-animation-fade-in-up-children">En CSG Seguros, <strong>protegemos lo que más valorás.</strong></p>
+                        <p class="js-animation-fade-in-up-children">Te aseguramos que te acompañamos.</p>
+                        <p class="js-animation-fade-in-up-children">"El beneficio es para el cliente".</p>
+                    </div>                    
+
+                </div>
+            </section>
+
+            <!-- Nuestros Valores -->
+            <section class="nuestros-valores">
+                <div class="nuestros-valores__container container">
+                    
+                    <!-- Title -->
+                    <h2 class="nuestros-valores__title js-animation-fade-in-up">Nuestros Valores Innegociables</h2>
+
+                    <!-- Valores -->
+                    <div class="nuestros-valores__valores-container js-animation-fade-in-up-container">
+                        <!-- Transparencia -->
+                        <div class="nuestros-valores__valor js-animation-fade-in-up-children">
+                            <h3 class="nuestros-valores__valor-title">Transparencia</h3>
+                            <p class="nuestros-valores__valor-copy">Hablamos claro, sin letra chica ni tecnicismos innecesarios. Creemos en la honestidad total como base de la confianza.</p>
+                        </div>
+                        <!-- •	Cercanía -->
+                        <div class="nuestros-valores__valor js-animation-fade-in-up-children">
+                            <h3 class="nuestros-valores__valor-title">Cercanía</h3>
+                            <p class="nuestros-valores__valor-copy">Creemos en la conexión humana. Queremos que te sientas acompañado, escuchado y respaldado en cada etapa.</p>
+                        </div>
+                        <!-- Compromiso -->
+                        <div class="nuestros-valores__valor js-animation-fade-in-up-children">
+                            <h3 class="nuestros-valores__valor-title">Responsabilidad</h3>
+                            <p class="nuestros-valores__valor-copy">Un seguro es una promesa de protección. Actuamos con integridad y cumplimos con nuestra palabra, siempre.</p>
+                        </div>
+                        <!-- Responsabilidad -->
+                        <div class="nuestros-valores__valor js-animation-fade-in-up-children">
+                            <h3 class="nuestros-valores__valor-title">Compromiso</h3>
+                            <p class="nuestros-valores__valor-copy">No te dejamos solo. Estamos presentes antes, durante y, sobre todo, mucho después de la contratación.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pasos/Metodología -->
             <section class="pasos">
                 <div class="pasos__container container">
 
-                    <div class="pasos__steps-container">
+                    <!-- Title -->
+                    <h2 class="pasos__title js-animation-fade-in-up">Metodología</h2>
+
+                    <!-- Steps -->
+                    <div class="pasos__steps-container js-animation-fade-in-up-container">
 
                         <!-- Step 1 -->
-                        <div class="pasos__step-container">
-                            <!-- Image -->
-                            <div class="pasos__step-image-container">
-                                <img src="imagenes/pasos/diagnosis.png" alt="Paso 1">
+                        <div class="pasos__step-container js-animation-fade-in-up-children">
+                            <!-- Front -->
+                            <div class="pasos__step-content-front">
+                                <!-- Image -->
+                                <div class="pasos__step-image-container">
+                                    <img src="imagenes/pasos/diagnosis.png" alt="Paso 1">
+                                </div>
+                                <!-- Title -->
+                                <h3 class="pasos__step-title">Consulta y Escucha</h3>
+                                <!-- Copy -->
+                                <p class="pasos__step-copy">Identificamos miedos y necesidades.</p>
                             </div>
-                            <!-- Title -->
-                            <h3 class="pasos__step-title">DIAGNÓSTICO</h3>
-                            <!-- Copy -->
-                            <p class="pasos__step-copy">Pólizas y riesgos actuales</p>
+                            <div class="pasos__step-content-back">
+                                <p>Tenemos la primera conversación. Más que preguntar qué seguro quiere, escuchamos su historia, sus miedos y sus necesidades reales (Insight: "proteger lo que le costó").</p>
+                                <p><strong>Objevtivo:</strong> Entender el contexto humano y financiero detrás de la consulta.</p>
+                            </div>
                         </div>
 
                         <!-- Step 2 -->
-                        <div class="pasos__step-container">
+                        <div class="pasos__step-container js-animation-fade-in-up-children">
+                            <!-- Front -->
+                            <div class="pasos__step-content-front">         
                             <!-- Image -->
                             <div class="pasos__step-image-container">
-                                <img src="imagenes/pasos/risk-map-2.png" alt="Paso 2">
+                                    <img src="imagenes/pasos/risk-map-2.png" alt="Paso 2">
+                                </div>
+                                <!-- Title -->
+                                <h3 class="pasos__step-title">Auditoría de Riesgos</h3>
+                                <!-- Copy -->
+                                <p class="pasos__step-copy">Realizamos un diagnóstico profundo </p>
                             </div>
-                            <!-- Title -->
-                            <h3 class="pasos__step-title">MAPA DE RIESGOS</h3>
-                            <!-- Copy -->
-                            <p class="pasos__step-copy">Impacto y probabilidad</p>
+                            <!-- Back -->
+                            <div class="pasos__step-content-back">
+                                <p>Gracias a la visión de asesoría financiera, analizamos el panorama completo (qué tiene, qué le falta, dónde está el riesgo real).</p>
+                                <p><strong>Objetivo:</strong> Identificar los riesgos exactos que deben cubrirse, evitando soluciones genéricas.</p>
+                            </div>
                         </div>
 
                         <!-- Step 3 -->
-                        <div class="pasos__step-container">
-                            <!-- Image -->
-                            <div class="pasos__step-image-container">
-                                <img src="imagenes/pasos/option.png" alt="Paso 3">
+                        <div class="pasos__step-container js-animation-fade-in-up-children">
+                            <!-- Front -->
+                            <div class="pasos__step-content-front">
+                                <!-- Image -->
+                                <div class="pasos__step-image-container">
+                                    <img src="imagenes/pasos/option.png" alt="Paso 3">
+                                </div>
+                                <!-- Title -->
+                                <h3 class="pasos__step-title">Diseño de Solución y Transparencia</h3>
+                                <!-- Copy -->
+                                <p class="pasos__step-copy">Presentamos una propuesta de valor</p>
                             </div>
-                            <!-- Title -->
-                            <h3 class="pasos__step-title">OPCIONES CLARAS</h3>
-                            <!-- Copy -->
-                            <p class="pasos__step-copy">Mejor cobertura multimarca</p>
+                            <!-- Back -->
+                            <div class="pasos__step-content-back">
+                                <p>Explicamos (sin letra chica y sin tecnicismos innecesarios) <strong>qué se cubre, por qué se cubre eso, y cómo impacta</strong> en su tranquilidad.</p>
+                                <p><strong>Objetivo:</strong> Que el cliente entienda perfectamente qué está contratando y tome una decisión informada.</p>
+                            </div>
                         </div>
 
                         <!-- Step 4 -->
-                        <div class="pasos__step-container">
-                            <!-- Image -->
-                            <div class="pasos__step-image-container">
-                                <img src="imagenes/pasos/implementation.png" alt="Paso 3">
+                        <div class="pasos__step-container js-animation-fade-in-up-children">
+                            <!-- Front -->
+                            <div class="pasos__step-content-front">
+                                <!-- Image -->
+                                <div class="pasos__step-image-container">
+                                    <img src="imagenes/pasos/implementation.png" alt="Paso 3">
+                                </div>
+                                <!-- Title -->
+                                <h3 class="pasos__step-title">Implementación y Contratación</h3>
+                                <!-- Copy -->
+                                <p class="pasos__step-copy">Gestionamos toda la contratación de la póliza</p>
                             </div>
-                            <!-- Title -->
-                            <h3 class="pasos__step-title">IMPLEMENTACIÓN</h3>
-                            <!-- Copy -->
-                            <p class="pasos__step-copy">Emisión, endosos y documentación</p>
+                            <!-- Back -->
+                            <div class="pasos__step-content-back">
+                                <p>Nos aseguramos de que cada detalle acordado en el Paso 3 quede perfectamente reflejado en el contrato.</p>
+                                <p><strong>Objetivo:</strong> Garantizar que el cliente está protegido desde el primer minuto.</p>
+                            </div>
                         </div>
 
                         <!-- Step 5 -->
-                        <div class="pasos__step-container">
-                            <!-- Image -->
-                            <div class="pasos__step-image-container">
-                                <img src="imagenes/pasos/team.png" alt="Paso 3">
+                        <div class="pasos__step-container js-animation-fade-in-up-children">
+                            <!-- Front -->
+                            <div class="pasos__step-content-front">
+                                <!-- Image -->
+                                <div class="pasos__step-image-container">
+                                    <img src="imagenes/pasos/team.png" alt="Paso 3">
+                                </div>
+                                <!-- Title -->
+                                <h3 class="pasos__step-title">Acompañamiento Post-Venta</h3>
+                                <!-- Copy -->
+                                <p class="pasos__step-copy">Mantenemos un vínculo activo y permanente.</p>
                             </div>
-                            <!-- Title -->
-                            <h3 class="pasos__step-title">ACOMPAÑAMENTO</h3>
-                            <!-- Copy -->
-                            <p class="pasos__step-copy">Revisión semestral de póliza</p>
+                            <!-- Back -->
+                            <div class="pasos__step-content-back">
+                                <ul>
+                                    <li><strong>Gestión de Siniestros:</strong> Somos la primera línea de defensa y acompañamiento si algo sucede.</li>
+                                    <li><strong>Recordatorios y Alertas:</strong> Avisamos vencimientos y necesidades de recategorización.</li>
+                                    <li><strong>Revisiones Periódicas:</strong> Auditamos activamente sus pólizas para ver si siguen siendo adecuadas.</li>
+                                    <li><strong>Optimización Constante:</strong> Si surge una opción mejor o más económica que cumple el objetivo, se la proponemos.</li>
+                                </ul>
+                                <p><strong>Objetivo:</strong> Que el cliente nunca se sienta desprotegido o abandonado.</p>
+                            </div>
                         </div>
 
                     </div>
@@ -263,239 +398,113 @@
                 <div class="productos__container container">
 
                     <!-- Title -->
-                    <h2 class="productos__title">Productos</h2>
+                    <h2 class="productos__title js-animation-fade-in-up">Productos</h2>
 
                     <!-- Productos -->
-                    <div class="productos__grid">
+                    <div class="productos__grid js-animation-fade-in-up-container">
                         <!-- Auto-->
-                        <div class="productos__grid-item">
+                        <div class="productos__grid-item js-animation-fade-in-up-children">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
                                 <img src="imagenes/productos/seguro-auto.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Auto</h3>
-                                <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
+                                <div class="productos__grid-item-body-content">
+                                    <h3 class="productos__grid-item-title">Automotor</h3>
+                                    <p class="productos__grid-item-copy">Cubre los daños y perjuicios causados a terceros (responsabilidad civil), el robo o hurto total o parcial del vehículo, los daños por incendio y los daños propios del vehículo (choques, vuelcos, etc.). Las coberturas específicas dependen del tipo de póliza, que puede incluir adicionalmente asistencias, cobertura de cristales, etc.</p>
+                                </div>
+                                <!-- Button -->
                                 <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/automotor" target="_blank" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
                         <!-- Hogar -->
-                        <div class="productos__grid-item">
+                        <div class="productos__grid-item js-animation-fade-in-up-children">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
                                 <img src="imagenes/productos/seguro-hogar.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Hogar</h3>
-                                <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
+                                <div class="productos__grid-item-body-content">
+                                    <h3 class="productos__grid-item-title">Hogar</h3>
+                                    <p class="productos__grid-item-copy">Cubre la estructura de la vivienda y los bienes dentro de ella ante riesgos como incendio, robo, daños por agua, y fenómenos naturales. También incluye coberturas para electrodomésticos, cristales, y la responsabilidad civil, etc.</p>
+                                </div>
+                                <!-- Button -->
                                 <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
-                        <!-- Vida -->
-                        <div class="productos__grid-item">
+                        <!-- Moto -->
+                        <div class="productos__grid-item js-animation-fade-in-up-children">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
                                 <img src="imagenes/productos/seguro-auto.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Vida</h3>
-                                <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
-                                <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/hogar" target="_blank" class="productos__grid-item-button btn btn--primary">Cotizar</a>
+                                <div class="productos__grid-item-body-content">
+                                    <h3 class="productos__grid-item-title">Moto</h3>
+                                    <p class="productos__grid-item-copy">Cubre los daños y perjuicios causados a terceros (responsabilidad civil), el robo o hurto total o parcial del vehículo, los daños por incendio y los daños propios del vehículo. Las coberturas específicas dependen del tipo de póliza, que puede incluir adicionalmente asistencias y otros.</p>
+                                </div>
+                                <!-- Button -->
+                                <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/motoveh%C3%ADculo" target="_blank" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
-                        <!-- Salud -->
-                        <div class="productos__grid-item">
+                        <!-- Bicicletas y/o Monopatines -->
+                        <div class="productos__grid-item js-animation-fade-in-up-children">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
                                 <img src="imagenes/productos/seguro-hogar.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Salud</h3>
-                                <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
-                                <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
+                                <div class="productos__grid-item-body-content">
+                                    <h3 class="productos__grid-item-title">Bicicletas y/o Monopatines</h3>
+                                    <p class="productos__grid-item-copy">Cubre dentro y/o fuera del domicilio del asegurado, el riesgo de robo de las bicicletas y/o monopatines especificados en la póliza, *Se excluye expresamente el hurto, el robo parcial y el robo de accesorios.</p>
+                                </div>
+                                <!-- Button -->
+                                <div style="display: flex; gap: 10px;">
+                                    <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/bicicleta" class="productos__grid-item-button btn btn--primary" style="width: 100%; padding: 16px;">Cotizar Bicicleta</a>
+                                    <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/monopatin" class="productos__grid-item-button btn btn--primary" style="width: 100%; padding: 16px;">Cotizar Monopatin</a>
+                                </div>
                             </div>
                         </div>
-                        <!-- Pensiones -->
-                        <div class="productos__grid-item">
+                        <!-- Seguro Técnico Notebooks -->
+                        <div class="productos__grid-item js-animation-fade-in-up-children">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
                                 <img src="imagenes/productos/" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Accidentes Personales</h3>
-                                <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
-                                <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
+                                <div class="productos__grid-item-body-content">
+                                    <h3 class="productos__grid-item-title">Seguro Técnico Notebooks</h3>
+                                    <p class="productos__grid-item-copy">Cubre dentro del Territorio de la República Argentina (dentro y/o fuera del domicilio del asegurado), los riesgos de incendio, rayo y/o explosión, robo o su tentativa (excluido el hurto) y daños como consecuencia de accidentes.</p>
+                                </div>
+                                <!-- Button -->
+                                <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/notebook" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
-                        <!-- Accidentes -->
-                        <div class="productos__grid-item">
+                        <!-- Seguro Técnico Tablets -->
+                        <div class="productos__grid-item js-animation-fade-in-up-children">
                             <!-- Header (Foto)-->
                             <div class="productos__grid-item-header">
                                 <img src="imagenes/productos/seguro-negocio.jpg" alt="Seguro de Auto">
                             </div>
                             <!-- Body (Titulo, Copy, Button)-->
                             <div class="productos__grid-item-body">
-                                <h3 class="productos__grid-item-title">Negocios</h3>
-                                <p class="productos__grid-item-copy">Protege tu vehículo contra accidentes, hurto y daños. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus corporis repellendus excepturi eius! Eveniet repellat necessitatibus repudiandae possimus rerum iure a, aperiam quae cumque eius quidem minus ullam minima nostrum!</p>
-                                <a href="#" class="productos__grid-item-button btn btn--primary">Cotizar</a>
+                                <div class="productos__grid-item-body-content">
+                                    <h3 class="productos__grid-item-title">Seguro Técnico Tablets</h3>
+                                    <p class="productos__grid-item-copy">Cubre dentro del Territorio de la República Argentina (dentro y/o fuera del domicilio del asegurado), los riesgos de incendio, rayo y/o explosión, robo o su tentativa (excluido el hurto) y daños como consecuencia de accidentes.</p>
+                                </div>
+                                <!-- Button -->
+                                <a href="https://www.clientes.polko.com.ar/ODM4OjM2OTY=/cotizar/tablet" class="productos__grid-item-button btn btn--primary">Cotizar</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Button -->
-                    <a href="https://calendar.app.google/fL331umiB22Dc57A7" target="_blank" class="productos__button btn btn--primary">Agendá gratis tu auditoría de 15’</a>
-
-                </div>
-            </section>
-
-            <!-- Testimonios -->
-            <section class="testimonials" id="testimonials">
-                <div class="testimonials__container container">
-
-                    <!-- Title -->
-                    <h2 class="testimonials__title">¿Qué dicen nuestros clientes?</h2>
-
-                    <!-- Testimonials -->
-                    <div class="testimonials__testimonials-container swiper js-testimonials-slider">
-                        <div class="swiper-wrapper">
-                            <!-- Testimonial 1 -->
-                            <div class="testimonials__testimonial swiper-slide">
-                                <div class="testimonials__testimonial-subcontainer">
-                                    <p class="testimonials__testimonial-quote">"TESTIMONIO 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-                                    <div class="testimonials__testimonial-footer">
-                                        <div class="testimonials__testimonial-author-image-container">
-                                        </div>
-                                        <p class="testimonials__testimonial-author">Juan Perez</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial 2 -->
-                            <div class="testimonials__testimonial swiper-slide">
-                                <div class="testimonials__testimonial-subcontainer">
-                                    <p class="testimonials__testimonial-quote">"TESTIMONIO 2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-                                    <div class="testimonials__testimonial-footer">
-                                        <div class="testimonials__testimonial-author-image-container">
-                                        </div>
-                                        <p class="testimonials__testimonial-author">Juan Perez</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Testimonial 3 -->
-                            <div class="testimonials__testimonial swiper-slide">
-                                <div class="testimonials__testimonial-subcontainer">
-                                    <p class="testimonials__testimonial-quote">"TESTIMONIO 3 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."</p>
-                                    <div class="testimonials__testimonial-footer">
-                                        <div class="testimonials__testimonial-author-image-container">
-                                        </div>
-                                        <p class="testimonials__testimonial-author">Juan Perez</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!-- Preguntas Frecuentes -->
-            <section class="faqs" id="preguntas-frecuentes">
-                <div class="faqs__container container">
-                    
-                    <!-- Title -->
-                    <h2 class="faqs__title">Preguntas Frecuentes</h2>
-
-                    <!-- FAQs -->
-                    <div class="faqs__faqs-container">
-                        <!-- FAQ -->
-                        <div class="faqs-faq">
-                            <details class="js-faq">
-                                <!-- Question -->
-                                <summary class="js-faq-question">
-                                    <span>¿Qué es una franquicia?</span>
-                                </summary>
-                                <!-- Answer -->
-                                <div class="faqs-faq-answer js-faq-answer">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur eum facere? Exercitationem architecto, reiciendis corrupti asperiores molestiae dolore tempore ratione quibusdam vero enim fuga voluptatem illum et necessitatibus alias?
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                    <!-- FAQ -->
-                    <div class="faqs__faqs-container">
-                        <!-- FAQ -->
-                        <div class="faqs-faq">
-                            <details class="js-faq">
-                                <!-- Question -->
-                                <summary class="js-faq-question">
-                                    <span>¿Cómo comparar coberturas más allá del precio?</span>
-                                </summary>
-                                <!-- Answer -->
-                                <div class="faqs-faq-answer js-faq-answer">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur eum facere? Exercitationem architecto, reiciendis corrupti asperiores molestiae dolore tempore ratione quibusdam vero enim fuga voluptatem illum et necessitatibus alias?
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                    <!-- FAQ -->
-                    <div class="faqs__faqs-container">
-                        <!-- FAQ -->
-                        <div class="faqs-faq">
-                            <details class="js-faq">
-                                <!-- Question -->
-                                <summary class="js-faq-question">
-                                    <span>¿Qué documentación necesito para un siniestro?</span>
-                                </summary>
-                                <!-- Answer -->
-                                <div class="faqs-faq-answer js-faq-answer">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur eum facere? Exercitationem architecto, reiciendis corrupti asperiores molestiae dolore tempore ratione quibusdam vero enim fuga voluptatem illum et necessitatibus alias?
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                    <!-- FAQ -->
-                    <div class="faqs__faqs-container">
-                        <!-- FAQ -->
-                        <div class="faqs-faq">
-                            <details class="js-faq">
-                                <!-- Question -->
-                                <summary class="js-faq-question">
-                                    <span>¿Cuándo conviene Vida/Salud/AP?</span>
-                                </summary>
-                                <!-- Answer -->
-                                <div class="faqs-faq-answer js-faq-answer">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur eum facere? Exercitationem architecto, reiciendis corrupti asperiores molestiae dolore tempore ratione quibusdam vero enim fuga voluptatem illum et necessitatibus alias?
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-                    <!-- FAQ -->
-                    <div class="faqs__faqs-container">
-                        <!-- FAQ -->
-                        <div class="faqs-faq">
-                            <details class="js-faq">
-                                <!-- Question -->
-                                <summary class="js-faq-question">
-                                    <span>¿Cómo se actualizan sumas aseguradas?</span>
-                                </summary>
-                                <!-- Answer -->
-                                <div class="faqs-faq-answer js-faq-answer">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam consectetur eum facere? Exercitationem architecto, reiciendis corrupti asperiores molestiae dolore tempore ratione quibusdam vero enim fuga voluptatem illum et necessitatibus alias?
-                                </div>
-                            </details>
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="faqs__button-container">
-                        <p><strong>¿Todavía tenes preguntas?</strong> <br> Agenda una consulta gratuita con nosotros.</p>
-                        <a href="#" class="faqs__button btn btn--primary">Agendá gratis tu auditoría de 15’</a>
-                    </div>
+                    <a href="https://calendar.app.google/fL331umiB22Dc57A7" target="_blank" class="productos__button btn btn--primary">Agendá tu Asesoría GRATUITA</a>
 
                 </div>
             </section>
@@ -505,34 +514,37 @@
                 <div class="company-logos__container container">
                    
                     <!-- Logos -->
-                    <div class="company-logos__logos-slider swiper js-company-logos-slider">
+                    <div class="company-logos__logos-slider swiper js-company-logos-slider js-animation-fade-in-up">
                         <div class="swiper-wrapper">
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/la-caja.png" alt="Logo 1">
+                                <img src="imagenes/logos-aseguradoras/atm-logo.png" alt="Logo 1">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/mapfre.png" alt="Logo 2">
+                                <img src="imagenes/logos-aseguradoras/el-norte-logo.png" alt="Logo 2">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/mercantil-andina.png" alt="Logo 3">
+                                <img src="imagenes/logos-aseguradoras/experta-logo.png" alt="Logo 3">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/la-nueva.png" alt="Logo 4">
+                                <img src="imagenes/logos-aseguradoras/federacion-patronal.png" alt="Logo 4">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/omint.svg" alt="Logo 5">
+                                <img src="imagenes/logos-aseguradoras/rivadavia-logo.png" alt="Logo 5">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/orbis.png" alt="Logo 6">
+                                <img src="imagenes/logos-aseguradoras/rus-logo.png" alt="Logo 6">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/sancor-seguros.png" alt="Logo 7">
+                                <img src="imagenes/logos-aseguradoras/san-cristobal-logo.png" alt="Logo 7">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/sura.png" alt="Logo 8">
+                                <img src="imagenes/logos-aseguradoras/smg-logo.png" alt="Logo 8">
                             </div>
                             <div class="company-logos__logo-container swiper-slide">
-                                <img src="imagenes/logos-aseguradoras/zurich.png" alt="Logo 9">
+                                <img src="imagenes/logos-aseguradoras/terrawind-logo.png" alt="Logo 9">
+                            </div>
+                            <div class="company-logos__logo-container swiper-slide">
+                                <img src="imagenes/logos-aseguradoras/zurich-logo.png" alt="Logo 10">
                             </div>
                         </div>
                     </div>
@@ -545,10 +557,10 @@
                 <div class="contactanos__container container">
 
                     <!-- Title -->
-                    <h2 class="contactanos__title">Contactanos</h2>
+                    <h2 class="contactanos__title js-animation-fade-in-up">Contactanos</h2>
 
                     <!-- Subcontainer -->
-                    <div class="contactanos__subcontainer">
+                    <div class="contactanos__subcontainer js-animation-fade-in">
 
                         <!-- Left -->
                         <div class="contactanos__container-left">
@@ -563,11 +575,11 @@
                             </p>
                             <a href="mailto:contacto@csgseguros.com.ar" class="contactanos__email">
                                 <img src="imagenes/icons/email-icon.svg" alt="Email Icon">
-                                contacto@csgseguros.com.ar
+                                consultas@csg.com.ar
                             </a>
-                            <a href="tel:+5493513333333" class="contactanos__phone">
+                            <a href="tel:+5493513212969" class="contactanos__phone">
                                 <img src="imagenes/icons/whatsapp-icon.svg" alt="Phone Icon">
-                                +54 9 351 333 3333
+                                +54 9 351 321-2969
                             </a>
                         </div>
                     
@@ -618,21 +630,66 @@
                 
                 <!-- Left -->
                 <div class="footer__container-left">
-                    <div>LOGO</div>                    
-                    <div>INFO CONTACTO</div>
-                    <div>REDES SOCIALES</div>
+                    <!-- Top -->
+                    <div class="footer__container-left-top">
+                        <!-- Logo -->
+                        <div>LOGO CSG</div>  
+                        <!-- Info Contacto -->                
+                        <div class="footer__contact-info">
+                            <a href="mailto:contacto@csgseguros.com.ar" class="footer__email">
+                                <img src="imagenes/icons/email-icon-white.svg" alt="Email Icon">
+                                consultas@csg.com.ar
+                            </a>
+                            <a href="tel:+5493513212969" class="footer__phone">
+                                <img src="imagenes/icons/whatsapp-icon-white.svg" alt="Phone Icon">
+                                +54 9 351 321-2969
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Bottom -->
+                    <div class="footer__container-left-bottom">
+                        <!-- Redes Sociales -->
+                        <div class="footer__redes-sociales">
+                            <a href="#">
+                                <img src="imagenes/icons/icon-facebook.svg" alt="Facebook Icon">
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/icons/icon-instagram.svg" alt="Instagram Icon">
+                            </a>
+                            <a href="#">
+                                <img src="imagenes/icons/icon-linkedin.svg" alt="Linkedin Icon">
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Right -->
                 <div class="footer__container-right">
-                    <p>MATRICULAS + LOGO SSN</p>
+                    <!-- Top -->
+                    <div class="footer__container-right-top">
+                        <img src="imagenes/footer/SSN-logo.png" alt="SSN Logo" class="footer__ssn-logo">
+                        <p>
+                            <a href="https://www.ssn.gob.ar" target="_blank" class="footer__ssn-link">www.ssn.gob.ar</a>
+                            <span> / </span>
+                            <a href="tel:+08006668400" class="footer__ssn-phone">0800-666-8400</a>
+                        </p>
+                    </div>
+                    <!-- Bottom -->
+                    <div class="footer__container-right-bottom">
+                        <div>
+                            <p>CSG – Creando soluciones Globales</p>
+                            <p>Provincia Córdoba, Localidad Córdoba, CP. 5000</p>
+                            <p>Matrícula Profesional: 67763</p>
+                        </div>
+                        <img src="imagenes/footer/QR-SSN.png" alt="QR SSN" class="footer__qr-ssn">
+                    </div>
                 </div>
 
             </div>
         </footer>
 
         <!-- WhatsApp Fixed Button -->
-        <a href="https://wa.me/5493513333333" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <a href="https://wa.me/5493513212969" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
             <img src="imagenes/icons/whatsapp-icon-color.png" alt="WhatsApp">
         </a>
 

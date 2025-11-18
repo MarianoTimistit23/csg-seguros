@@ -1,0 +1,34 @@
+.nuestros-valores {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .nuestros-valores__title {
+        text-align: center;
+        margin-bottom: 52px;
+    }
+
+    .nuestros-valores__valores-container {
+        padding: 0 60px;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .nuestros-valores__valor {
+        flex: 1;
+        min-width: 0;
+        background-color: var(--color-light-gray);
+        padding: 32px;
+    }
+
+    .nuestros-valores__valor-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--color-blue-darker);
+        margin-bottom: 12px;
+    }
+
+    .nuestros-valores__valor-copy {
+        line-height: 24px;
+    }
+}

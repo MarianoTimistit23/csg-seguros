@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
     /**
      * Animate on scroll (Intersection Observer API)
      */
-    const faders = document.querySelectorAll('.js-animation-fade-in, .js-animation-fade-in-container');
+    const faders = document.querySelectorAll('.js-animation-fade-in, .js-animation-fade-in-container, .js-animation-fade-in-up, .js-animation-fade-in-up-container');
 
     const options = {
-        threshold: .5
+        threshold: .15
     };
 
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
@@ -30,10 +30,28 @@ document.addEventListener('DOMContentLoaded', function() {
                     appearOnScroll.unobserve(entry.target);
                 }
 
+                // Fade-in-up animation
+                if (entry.target.classList.contains('js-animation-fade-in-up')) {
+                    entry.target.classList.add('js-animation-visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+
                 // Staggered fade-in animation for container and children
                 if (entry.target.classList.contains('js-animation-fade-in-container')) {
                     entry.target.classList.add('js-animation-visible');
                     const children = entry.target.querySelectorAll('.js-animation-fade-in-children');
+                    children.forEach((child, index) => {
+                        setTimeout(() => {
+                            child.classList.add('js-animation-visible');
+                        }, index * 200); // Adjust the delay as needed (200ms here)
+                    });
+                    appearOnScroll.unobserve(entry.target);
+                }
+
+                // Staggered fade-in-up animation for container and children
+                if (entry.target.classList.contains('js-animation-fade-in-up-container')) {
+                    entry.target.classList.add('js-animation-visible');
+                    const children = entry.target.querySelectorAll('.js-animation-fade-in-up-children');
                     children.forEach((child, index) => {
                         setTimeout(() => {
                             child.classList.add('js-animation-visible');
