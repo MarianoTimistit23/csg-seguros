@@ -126,20 +126,16 @@
         animation: spin 2s linear infinite;
     }
 
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-    }
-
     .success-message {
         display: none;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        max-width: 400px;
         height: max-content;
-        background-color: rgba(black, .1);
-        padding: 24px 6px;
         border-radius: 8px;
+        padding: 24px 6px;
+        margin: 0 auto;
 
         p {
             color: black;
@@ -149,10 +145,11 @@
             margin-top: 12px;
         }
     }
+}
 
-    /* -- SVG Tick Animation -- */
-    @supports (animation: grow .5s cubic-bezier(.25, .25, .25, 1) forwards) {
-        .tick {
+/* -- SVG Tick Animation -- */
+@supports (animation: grow .5s cubic-bezier(.25, .25, .25, 1) forwards) {
+    .contactanos .tick {
         stroke-opacity: 0;
         stroke-dasharray: 29px;
         stroke-dashoffset: 29px;
@@ -160,7 +157,7 @@
         animation-delay: .6s
     }
 
-    .circle {
+    .contactanos .circle {
         fill-opacity: 0;
         stroke: #219a00;
         stroke-width: 16px;
@@ -168,24 +165,28 @@
         transform: scale(0);
         animation: grow 1s cubic-bezier(.25, .25, .25, 1.25) forwards;   
     }   
-    }
+}
 
-    @keyframes grow {
-        60% {
-            transform: scale(.8);
-            stroke-width: 4px;
-            fill-opacity: 0;
-        }
-        100% {
-            transform: scale(.9);
-            stroke-width: 8px;
-            fill-opacity: 1;
-            fill: #219a00;
-        }
-    }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
 
-    @keyframes draw {
-        0%, 100% { stroke-opacity: 1; }
-        100% { stroke-dashoffset: 0; }
+@keyframes grow {
+    60% {
+        transform: scale(.8);
+        stroke-width: 4px;
+        fill-opacity: 0;
     }
+    100% {
+        transform: scale(.9);
+        stroke-width: 8px;
+        fill-opacity: 1;
+        fill: #219a00;
+    }
+}
+
+@keyframes draw {
+    0%, 100% { stroke-opacity: 1; }
+    100% { stroke-dashoffset: 0; }
 }
