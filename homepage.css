@@ -6,11 +6,7 @@
 @import 'css/components/footer.css';
 /* Modules */
 @import 'css/modules/hero.css';
-@import 'css/modules/metrics.css';
-@import 'css/modules/quienes-somos.css';
-@import 'css/modules/quienes-somos-continuacion.css';
-@import 'css/modules/nuestros-valores.css';
-@import 'css/modules/pasos.css';
 @import 'css/modules/productos.css';
+@import 'css/modules/why-us.css';
 @import 'css/modules/company-logos.css';
 @import 'css/modules/contactanos.css';

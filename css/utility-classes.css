@@ -16,7 +16,17 @@
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 120px;
+
+    /* LargeTablet */
+    @media (max-width: 1024px) {
+        padding: 0 40px;
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
 }
 
 /* -- Utility Classes -- */
@@ -34,6 +44,7 @@
         color: var(--color-white);
         background-color: var(--color-blue);
         border: 1px solid var(--color-blue);
+        transition: .2s linear;
 
         &:hover {
             background-color: var(--color-blue-darker);
@@ -46,6 +57,7 @@
         color: var(--color-text-black);
         background-color: var(--color-light-gray);
         border: 1px solid var(--color-light-gray);
+        transition: .2s linear;
 
         &:hover {
             background-color: #d9dbe7;

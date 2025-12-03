@@ -19,6 +19,12 @@
     .footer__container {
         display: flex;
         justify-content: space-between;
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            gap: 40px;
+        }
     }
 
     /* --- Left --- */
@@ -26,6 +32,16 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        gap: 40px;
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            gap: 30px;
+        }
+    }
+
+    .footer__logo {
+        max-width: 160px;
     }
 
     .footer__contact-info {
@@ -71,12 +87,23 @@
     /* --- Right --- */
     /* - Top - */
     .footer__container-right-top {
+        margin-top: auto;
         margin-bottom: 40px;
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
 
         .footer__ssn-logo {
             display: block;
             max-width: 380px;
             margin-left: auto;
+
+            /* Mobile */
+            @media (max-width: 768px) {
+                max-width: 280px;
+            }
         }
 
         p {

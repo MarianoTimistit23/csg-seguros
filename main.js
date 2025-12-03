@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     /**
      * Metrics counters (animate from 0 to target on scroll)
      */
-    const counterEls = document.querySelectorAll('.js-counter');
+    /*const counterEls = document.querySelectorAll('.js-counter');
 
     const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, { threshold: 0.4 });
 
-    counterEls.forEach(el => countersObserver.observe(el));
+    counterEls.forEach(el => countersObserver.observe(el));*/
 
     /**
      * Hamburger Menu Toggle
@@ -175,13 +175,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     /* --- FAQs --- */
-    document.querySelectorAll('.js-faq').forEach((el, index) => {
+    /*document.querySelectorAll('.js-faq').forEach((el, index) => {
         const accordion = new Accordion(el);
         // Open the first FAQ by default
         if (index === 0) {
             accordion.open();
         }
-    });
+    });*/
 
     /**
      * Contact Form
@@ -200,9 +200,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         try {
             const formData = new FormData(form);
+            const body = new URLSearchParams(formData).toString();
             const response = await fetch('/', {
                 method: 'POST',
-                body: formData,
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body,
             });
             
             // Check if response is successful

@@ -1,11 +1,11 @@
 .contactanos {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     /* -- Title -- */
     .contactanos__title {
         text-align: center;
-        margin-bottom: 52px;
+        margin-bottom: 42px;
     }
 
     /* -- Subcontainer -- */
@@ -13,22 +13,34 @@
         display: flex;
         width: 100%;
         border-radius: 6px;
-        background-color: var(--color-light-gray);
+        padding: 0 120px;
+
+        /* Large Tablet */
+        @media (max-width: 1024px) {
+            padding: 0 40px;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+            padding: 0;
+        }
     }
 
     /* -- Left -- */
     .contactanos__container-left {
         width: 40%;
         background-color: #d9dbe7;
+        border-radius: 6px 0 0 6px;
         padding: 32px;
-    }
 
-    .contactanos__map-container {
-
-        iframe {
+        /* Mobile */
+        @media (max-width: 768px) {
             width: 100%;
-            max-width: 100%;
-            pointer-events: none
+        }
+
+        h3 {
+            margin-bottom: 24px;
         }
     }
 
@@ -38,9 +50,10 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        font-size: 18px;
 
         img {
-            max-width: 24px;
+            max-width: 42px;
             height: auto;
             object-fit: contain;
         }
@@ -55,12 +68,43 @@
         margin-top: 12px;
     }
 
+    .contactanos__cta-subtitle {
+        margin-top: 42px;
+    }
+
     /* -- Right (Form) -- */
     .contactanos__container-right {
         width: 60%;
+        background-color: var(--color-light-gray);
+        border-radius: 0 6px 6px 0;
         padding: 32px;
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            width: 100%;
+        }
     }
 
+    form {
+        margin-top: 32px;
+
+        label {
+            margin-bottom: 16px;
+        }
+
+        input,
+        textarea {
+            margin-top: 8px;
+        }
+
+        textarea {
+            min-height: 80px;
+        }
+
+        button {
+            margin-top: 22px;
+        }
+    }
 
 
     .loader-container {

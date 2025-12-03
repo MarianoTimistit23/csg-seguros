@@ -6,14 +6,14 @@
     z-index: 100;
     color: white;
     background-color: var(--color-blue-darker);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     transition: .2s linear;
 
     &.scrolled {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
         transition: .2s linear;
     }
 
@@ -23,7 +23,25 @@
         align-items: center;
     }
 
+    .header__logo {
+        
+        img {
+            max-width: 180px;
+
+            /* Mobile */
+            @media (max-width: 767px) {
+                max-width: 140px;
+            }
+        }
+    }
+
     .header__nav {
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            display: none;
+        }
+
         ul {
             display: flex;
             align-items: center;
@@ -31,6 +49,7 @@
 
             a {
                 position: relative;
+                color: var(--color-white);
 
                 &::after {
                     bottom: -4px;
@@ -55,6 +74,7 @@
             }
 
             .btn {
+                color: var(--color-text-black);
                 padding: 10px 16px;
 
                 &::after {
@@ -126,8 +146,8 @@
             position: absolute;
             top: -26px;
             right: -25px;
-            width: calc(100vw + 10px);
-            height: calc(100vh + 10px);
+            width: calc(100vw + 25px);
+            height: calc(100vh + 25px);
             padding: 125px 50px 50px;
             background: #ededed;
             list-style-type: none;
@@ -142,11 +162,27 @@
             li {
                 padding: 20px 0;
 
+                /* Mobile */
+                @media (max-width: 767px) {
+                    text-align: center;
+                }
+
                 a {
                     font-size: 26px;
                     line-height: 30px;
                     font-weight: 700;
                     color: var(--color-secondary);
+
+                    &.btn.btn--light-gray {
+                        /* Mobile */
+                        @media (max-width: 767px) {
+                            color: var(--color-white);
+                            background-color: var(--color-blue-darker);
+                            width: max-content;
+                            margin: 0 auto;
+                        }
+
+                    }
                 }
             }
         }
